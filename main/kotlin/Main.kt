@@ -1,13 +1,16 @@
 fun main(){
-    val number1 = readLine()
-    val number2 = readLine()
+    // Immutable List
+    val shoppingList = listOf<String>("toyota", "rolex", "mazda")
+    println(shoppingList[1])
 
-    val result = number1!!.toInt() + number2!!.toInt()
-    println(result)
+    // mutable List
+    val shopping = mutableListOf("toyota", "rolex", "mazda")
+    shopping.add("Ferrari")
+    println(shopping[3])
 
-    val number3 = readLine() ?: "0"
-    val number4 = readLine() ?: "0"
-
-    val result2 = number3.toInt() + number4.toInt()
-    println(result2)
+    var counter = 0
+    while (counter < shopping.size) {
+        println(shopping[counter])
+        counter++
+    }
 }
