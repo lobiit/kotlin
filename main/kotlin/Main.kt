@@ -3,6 +3,10 @@ fun main(){
     println( isEven(23))
     val y = 23
     println(y.isOdd())
+    val dog = Dog()
+    dog.bark()
+    val cat = Cat()
+    cat.meow()
 }
 
 fun isEven(number: Int):Boolean {
