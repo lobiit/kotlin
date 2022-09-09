@@ -1,14 +1,19 @@
 fun main(){
-    // mutable List
-    val shopping = mutableListOf("toyota", "rolex", "mazda")
-    shopping.add("Ferrari")
+    printNumbers()
+    println( isEven(23))
+    val y = 23
+    println(y.isOdd())
+}
 
-    val x = 3
-    when(x) {
-        in 1..2 -> println("x is between 1 and 2")
-        in 3..10 -> println("x is between 3 and 10")
-        else -> {
-            println("x is not in the range of 1 to 10")
-        }
+fun isEven(number: Int):Boolean {
+    return number % 2 == 0
+}
+
+fun Int.isOdd(): Boolean {
+    return this % 2 == 1
+}
+fun printNumbers() {
+    for (i in 1..10) {
+        println(i)
     }
 }
